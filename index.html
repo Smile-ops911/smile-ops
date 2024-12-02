@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile</title>
+    <link rel="stylesheet" href="stilo.css">
+    <style>
+        #particles-js{
+            background: rgb(34, 34, 34);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="paralax.html">Reseñas</a></li>
+                <li><a href="{ultimo.html">Lo último</a></li>
+                <li class="dropdown">
+                    <a href="Películas.html" class="dropbtn">Películas</a>
+                    <div class="dropdown-content">
+                        <a href="CATEGORIAS.HTML">Categorías</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Ver</a>
+                    <div class="dropdown-content">
+                        <a href="Trailers.html">Trailers</a>
+                        <a href="Destacados.html">Destacados</a>
+                        <a href="celebridades.html">Celebridades</a>
+                        <a href="series.html">Series</a>
+                    </div>
+                </li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Novedades">
+      <h1>Novedades del Cine</h1>
+      <p>Últimas noticias, estrenos y trailers del mundo del cine.</p>
+    </section>
+
+  <section class="news-section">
+      <article class="news-item">
+          <img src="img/nov1.jpg" alt="Novedad 1" class="news-image">
+          <h2>El regreso de los grandes</h2>
+          <p>La nueva película de acción de un famoso director promete volver a llevarnos a la gran pantalla con sus increíbles efectos especiales.</p>
+          <a target="_blank" href="https://www.elseptimoarte.net/peliculas/haunting-of-the-queen-mary-26239.html" class="read-more">Leer más</a>
+      </article>
+
+      <article class="news-item">
+          <img src="img/nov2.jpg" alt="Novedad 2" class="news-image">
+          <h2>Estreno de la semana</h2>
+          <p>No te pierdas el estreno de la nueva comedia romántica que ha hecho reír a todos en las proyecciones de prueba.</p>
+          <a target="_blank" href="https://www.elseptimoarte.net/peliculas/venom-3-24844.html" class="read-more">Leer más</a>
+      </article>
+
+      <article class="news-item">
+          <img src="img/nov3.jpg" alt="Novedad 4" class="news-image">
+          <h2>Premios y reconocimientos</h2>
+          <p>La temporada de premios está en marcha, y las nominaciones han dejado a todos sorprendidos.</p>
+          <a target="_blank" href="https://www.elseptimoarte.net/peliculas/a-quiet-place-spin-off-23433.html" class="read-more">Leer más</a>
+      </article>
+  </section>
+
+<footer>
+        <p>&copy; 2024 Reseñas de Películas. Todos los derechos reservados.</p>
+</footer>
+<div id="particles-js"></div>
+<script src="particles.min.js"></script>
+<script>
+        particlesJS(
+            {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+        )
+    </script>
+</body>
+</html>

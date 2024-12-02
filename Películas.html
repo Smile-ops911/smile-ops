@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile</title>
+    <link rel="stylesheet" href="styless.css">
+    <style>
+        #particles-js{
+            background: rgb(34, 34, 34);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="index.html">Novedades</a></li>
+                <li class="dropdown">
+                    <a href="Películas.html" class="dropbtn">Películas</a>
+                    <div class="dropdown-content">
+                        <a href="#">Categorías</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Ver</a>
+                    <div class="dropdown-content">
+                        <a href="Trailers.html">Trailers</a>
+                        <a href="Destacados.html">Destacados</a>
+                        <a href="celebridades.html">Celebridades</a>
+                    </div>
+                </li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Smile</h1>
+            <p>Aquí encontrarás reseñas de las películas más recientes y populares de todos los géneros. Explora nuestras categorías para descubrir más.</p>
+        </section>
+    </main>
+    <section class="hero">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="slide active">
+                    <img src="img/poster1.jpg" alt="Póster Película 1" width="20%">
+                    <div class="carousel-text">
+                        <h2>Oppenheimer</h2>
+                        <p>Una mirada profunda en la mente detrás de la bomba atómica. Dirigida por Christopher Nolan, esta película explora el conflicto entre el poder y la moral.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/poster2.jpg" alt="Póster Película 2" width="20%">
+                    <div class="carousel-text">
+                        <h2>DeadPool & Wolverine</h2>
+                        <p>Deadpool viaja en el tiempo con la intención de reclutar a Wolverine en la batalla contra un enemigo común: Paradox.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/poster3.jpg" alt="Póster Película 3" width="20%">
+                    <div class="carousel-text">
+                        <h2>Killers of the Flower Moon</h2>
+                        <p>Una obra épica de Scorsese que narra la investigación de una serie de asesinatos en la Nación Osage en la década de 1920.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+    <br><br><br>
+    <section class="latest-reviews">
+        <h2>Últimas Reseñas</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <img src="img/card1.jpeg" alt="Póster Oppenheimer">
+                <div class="review-text">
+                    <h3>Oppenheimer</h3>
+                    <div class="rating">★★★★☆</div>
+                    <p>Una mirada profunda en la mente detrás de la bomba atómica. Un drama épico que explora el conflicto entre poder y moralidad.</p>
+                    <a target="_blank" href="https://www.melomanodigital.com/resena-oppenheimer/">Leer más</a>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <img src="img/card2.jpeg" alt="Póster Barbie">
+                <div class="review-text">
+                    <h3>Barbie</h3>
+                    <div class="rating">★★★☆☆</div>
+                    <p>Más que una comedia, esta película desafía los estereotipos con un mensaje profundo sobre identidad y feminismo.</p>
+                    <a target="_blank" href="https://www.vogue.mx/barbie-pelicula-resena">Leer más</a>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <img src="img/card3.jpg" alt="Póster Killers of the Flower Moon">
+                <div class="review-text">
+                    <h3>Killers of the Flower Moon</h3>
+                    <div class="rating">★★★★★</div>
+                    <p>Una obra maestra de Scorsese, que narra la brutal investigación de los asesinatos en la Nación Osage en la década de 1920.</p>
+                    <a target="_blank" href="https://www.latimes.com/espanol/entretenimiento/articulo/2023-10-18/resena-killers-of-the-flower-moon-de-scorsese-es-una-historia-de-codicia-ricamente-narrada">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <section class="top-movies">
+        <h2>Top Películas</h2>
+        <div class="movies-container">
+            <div class="movie-card">
+                <div class="abstract-shape"></div>
+                <img src="img/top1.jpeg" alt="Póster Inception">
+                <div class="movie-info">
+                    <h3>Inception</h3>
+                    <div class="rating">★★★★★</div>
+                    <p>Una película que mezcla realidad y sueños, donde el ladrón más hábil entra en los sueños de las personas para robar secretos.</p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="abstract-shape"></div>
+                <img src="img/top2.jpg" alt="Póster Interstellar">
+                <div class="movie-info">
+                    <h3>Interstellar</h3>
+                    <div class="rating">★★★★★</div>
+                    <p>En un futuro distópico, un grupo de astronautas busca un nuevo hogar para la humanidad en los confines del espacio.</p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="abstract-shape"></div>
+                <img src="img/top3.jpeg" alt="Póster Parasite">
+                <div class="movie-info">
+                    <h3>Parasite</h3>
+                    <div class="rating">★★★★★</div>
+                    <p>Una historia que combina la comedia y el drama para criticar las desigualdades sociales de forma brillante e impactante.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="review-section">
+        <h2>Deja tu Reseña</h2>
+        <p>Comparte tu opinión sobre las últimas películas que has visto y ayuda a otros a descubrir grandes films.</p>
+
+        <!-- Formulario de reseñas -->
+        <div class="review-form-container">
+            <form class="review-form">
+                <label for="username">Nombre:</label>
+                <input type="text" id="username" name="username" placeholder="Ingresa tu nombre">
+
+                <label for="movie">Película:</label>
+                <input type="text" id="movie" name="movie" placeholder="Nombre de la película">
+
+                <label for="rating">Calificación:</label>
+                <select id="rating" name="rating">
+                    <option value="5">★★★★★ (5 estrellas)</option>
+                    <option value="4">★★★★☆ (4 estrellas)</option>
+                    <option value="3">★★★☆☆ (3 estrellas)</option>
+                    <option value="2">★★☆☆☆ (2 estrellas)</option>
+                    <option value="1">★☆☆☆☆ (1 estrella)</option>
+                </select>
+
+                <label for="review">Tu reseña:</label>
+                <textarea id="review" name="review" rows="5" placeholder="Escribe tu reseña aquí..."></textarea>
+
+                <button type="submit">Enviar Reseña</button>
+            </form>
+
+            <!-- Elementos abstractos -->
+            <div class="abstract-element element-1"></div>
+            <div class="abstract-element element-2"></div>
+        </div>
+    </section>
+<footer>
+        <p>&copy; 2024 Reseñas de Películas. Todos los derechos reservados.</p>
+</footer>
+<div id="particles-js"></div>
+<script src="particles.min.js"></script>
+<script>
+        particlesJS(
+            {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+        )
+    </script>
+<script src="funcion.js"></script>
+</body>
+</html>

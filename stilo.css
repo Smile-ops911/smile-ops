@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #ffffff;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+.navbar li a:hover, .dropbtn:hover {
+    border-radius: 30px;
+    background-color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+/* novedades */
+.Novedades {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #ff9a00, #ff6b00);
+    color: #fff;
+}
+
+.Novedades h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.Novedades p {
+    font-size: 1.2rem;
+}
+.news-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Puedes ajustar el tamaño */
+    transition: transform 0.3s;
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+}
+
+.news-item h2 {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #ff6b00;
+}
+
+.news-item p {
+    padding: 0 10px 10px;
+    color: #333;
+}
+
+.read-more {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #ff6b00;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #ff4c00;
+}
